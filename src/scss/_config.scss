@@ -1,5 +1,19 @@
 $primary-color: #db7647;
 
 @mixin easeOut {
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+@mixin linkStyle {
+  a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #eee;
+    @include easeOut;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
 }

@@ -1,0 +1,21 @@
+// Mobile
+@media screen and (max-width: 580px) {
+  .navigation {
+    .menu-btn {
+      display: block !important;
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+}
+
+// Landscape
+@media screen and (max-height: 550px) {
+  .showcase {
+    .content {
+      top: 0;
+    }
+  }
+}

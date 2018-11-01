@@ -1,4 +1,5 @@
 @import "config";
+@import "menu";
 
 html,
 body {
@@ -9,7 +10,7 @@ body {
 }
 
 .showcase {
-  background: url(https://www.dropbox.com/s/8poz1swj4hjvejm/background2.jpg?raw=1)
+  background: url(https://raw.githubusercontent.com/marcin-brumer/Copywriter-Portfolio/master/dist/img/background2.jpg)
     no-repeat center center;
   background-size: cover;
   height: 100vh;
@@ -17,46 +18,6 @@ body {
   position: relative;
   top: 0;
   color: #eee;
-
-  .navbar {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-
-    .nav-logo {
-      position: fixed;
-      top: 12px;
-      left: 40px;
-
-      .logo {
-        height: 50px;
-      }
-    }
-
-    .menu {
-      margin: 0;
-      padding: 0 20px;
-      list-style: none;
-      background-color: #000;
-      text-align: right;
-
-      .nav-link {
-        display: inline-block;
-        padding: 25px 20px;
-
-        a {
-          text-decoration: none;
-          font-size: 1.1rem;
-          color: #eee;
-          @include easeOut;
-
-          &:hover {
-            color: $primary-color;
-          }
-        }
-      }
-    }
-  }
 
   .content {
     position: absolute;
@@ -101,3 +62,5 @@ body {
     }
   }
 }
+
+@import "mobile";
