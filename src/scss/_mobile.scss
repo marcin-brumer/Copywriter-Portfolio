@@ -1,8 +1,17 @@
-// Lg
-@media screen and (max-width: 1201px) {
+// XL
+@media screen and (max-width: 1500px) {
   .offer-section {
     .offer-wrapper {
       width: 80%;
+    }
+  }
+}
+
+// Lg
+@media screen and (max-width: 1200px) {
+  .offer-section {
+    .offer-wrapper {
+      grid-gap: 40px;
     }
   }
 }
