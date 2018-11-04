@@ -1,3 +1,24 @@
+// Lg
+@media screen and (max-width: 1201px) {
+  .offer-section {
+    .offer-wrapper {
+      width: 80%;
+    }
+  }
+}
+
+// Medium
+@media screen and (max-width: 992px) {
+  .offer-section {
+    .offer-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
 // Mobile
 @media screen and (max-width: 580px) {
   .navigation {
