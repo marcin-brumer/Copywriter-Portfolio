@@ -107,7 +107,6 @@ p {
     #111111 100%
   );
   background-size: 72.12px 72.12px;
-  color: #fff;
   .offer-wrapper {
     width: 70%;
     margin: 0 auto;
@@ -115,6 +114,7 @@ p {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    color: #fff;
     grid-gap: 80px;
     line-height: 2rem;
     .offer-item {
@@ -124,6 +124,7 @@ p {
       }
       p {
         font-size: 1.2rem;
+        color: rgb(197, 197, 197);
       }
       .icon {
         i {
@@ -146,6 +147,34 @@ p {
   }
 }
 .about-section {
-  background-color: rgb(226, 226, 226);
+  background-color: #fff;
+  .about-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0 150px 0;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 80px;
+    line-height: 2.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    .about-info-wrapper {
+      display: flex;
+      align-items: center;
+      .about-info {
+        color: #1f1e1e;
+      }
+    }
+    .about-photo {
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+      }
+    }
+  }
 }
 @import "mobile";

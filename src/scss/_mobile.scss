@@ -5,6 +5,13 @@
       width: 80%;
     }
   }
+
+  .about-section {
+    .about-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+    }
+  }
 }
 
 // Lg
@@ -12,6 +19,12 @@
   .offer-section {
     .offer-wrapper {
       grid-gap: 40px;
+    }
+  }
+
+  .about-section {
+    .about-wrapper {
+      width: 90%;
     }
   }
 }
@@ -23,9 +36,32 @@
       grid-template-columns: 1fr;
     }
   }
+
+  .about-section {
+    .about-wrapper {
+      text-align: center;
+      grid-template-columns: 1fr;
+      width: 80%;
+    }
+
+    .about-photo {
+      img {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .about-section {
+    .about-photo {
+      img {
+        max-width: 80%;
+      }
+    }
+  }
 }
 
 // Mobile
@@ -37,6 +73,14 @@
 
     .menu {
       display: none;
+    }
+  }
+
+  .about-section {
+    .about-photo {
+      img {
+        max-width: 100%;
+      }
     }
   }
 }
