@@ -104,13 +104,16 @@
     </section>
     <section class="contact-section">
         <h1 class='section-title'>KONTAKT</h1>
-        <form name="contact" method="POST" netlify>
-            <input type="text" name="name" placeholder="Twoje imię..." /></label>
-            <input type="email" name="email" placeholder="Email..." /></label>
-            <input type="text" name="name" placeholder="Temat..." /></label>
-            <textarea name="message" placeholder="Twoja wiadomość..."></textarea></label>
-            <button type="submit">Wyślij</button>
-        </form>
+        <div class="contact-form">
+            <form name="contact" method="POST" netlify>
+                <input type="text" name="name" placeholder="Twoje imię..." /></label>
+                <input type="email" name="email" placeholder="Email..." /></label>
+                <input type="text" name="name" placeholder="Temat..." /></label>
+                <textarea name="message" rows='10' placeholder="Twoja wiadomość..."></textarea></label>
+                <button type="submit">WYŚLIJ</button>
+            </form>
+        </div>
+
     </section>
 
     <script src="dist/bundle.js"></script>

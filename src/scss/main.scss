@@ -147,7 +147,17 @@ p {
   }
 }
 .about-section {
-  background-color: #fff;
+  background-image: linear-gradient(
+    45deg,
+    #ebebeb 0.98%,
+    #ffffff 0.98%,
+    #ffffff 50%,
+    #ebebeb 50%,
+    #ebebeb 50.98%,
+    #ffffff 50.98%,
+    #ffffff 100%
+  );
+  background-size: 72.12px 72.12px;
   .about-wrapper {
     width: 70%;
     margin: 0 auto;
@@ -173,6 +183,53 @@ p {
         height: auto;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
           0 6px 6px rgba(0, 0, 0, 0.23);
+      }
+    }
+  }
+}
+.contact-section {
+  background: url(https://www.dropbox.com/s/pnxlzxgy2bf0r46/pexels-photo-408951.jpeg?raw=1)
+    no-repeat center center;
+  background-attachment: fixed;
+  .contact-form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 0;
+    form {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      input,
+      textarea {
+        padding: 10px;
+        border-radius: 5px;
+        outline-color: $primary-color;
+      }
+      textarea {
+        grid-column: 1 / 4;
+      }
+      button {
+        grid-column: 2 / 3;
+        width: 250px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $primary-color;
+        outline: none;
+        border-radius: 40px;
+        border: 2px solid $primary-color;
+        color: #fff;
+        letter-spacing: 3px;
+        font-size: 1rem;
+        font-weight: 600;
+        display: block;
+        cursor: pointer;
+        @include easeOut;
+        &:hover {
+          background-color: #fff;
+          color: $primary-color;
+        }
       }
     }
   }
