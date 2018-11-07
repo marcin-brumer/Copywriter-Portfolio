@@ -12,6 +12,11 @@ const sideMenu = document.querySelector(".side-menu");
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
+sideMenu.addEventListener("click", e => {
+  if (e.target.parentElement.className === "side-menu-link") {
+    toggleMenu();
+  }
+});
 
 function toggleMenu() {
   if (!showMenu) {
