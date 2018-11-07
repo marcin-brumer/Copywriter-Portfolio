@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="showcase">
+    <header id="showcase">
         <nav class="navigation">
             <div class="nav-logo">
                 <a href='#'><img src="https://www.dropbox.com/s/oorshj2cr6kz9ou/LogoMakr_1dSGnk.png?raw=1" class="logo"
@@ -24,16 +24,16 @@
                 <div class="btn-line"></div>
             </div>
             <ul class="menu">
-                <li class="menu-link"><a href='#'>Start</a></li>
-                <li class="menu-link"><a href='#'>Oferta</a></li>
-                <li class="menu-link"><a href='#'>O Mnie</a></li>
-                <li class="menu-link"><a href='#'>Kontakt</a></li>
+                <li class="menu-link"><a href='#showcase'>Start</a></li>
+                <li class="menu-link"><a href='#offer-section'>Oferta</a></li>
+                <li class="menu-link"><a href='#about-section'>O Mnie</a></li>
+                <li class="menu-link"><a href='#contact-section'>Kontakt</a></li>
             </ul>
             <ul class="side-menu">
-                <li class="side-menu-link"><a href='#'>Start</a></li>
-                <li class="side-menu-link"><a href='#'>Oferta</a></li>
-                <li class="side-menu-link"><a href='#'>O Mnie</a></li>
-                <li class="side-menu-link"><a href='#'>Kontakt</a></li>
+                <li class="side-menu-link"><a href='#showcase'>Start</a></li>
+                <li class="side-menu-link"><a href='#offer-section'>Oferta</a></li>
+                <li class="side-menu-link"><a href='#about-section'>O Mnie</a></li>
+                <li class="side-menu-link"><a href='#contact-section'>Kontakt</a></li>
             </ul>
         </nav>
         <div class="content">
@@ -46,7 +46,7 @@
             </div>
         </div>
     </header>
-    <section class='offer-section'>
+    <section id='offer-section'>
         <h1 class='section-title'>OFERTA</h1>
         <div class='offer-wrapper'>
             <div class="offer-item">
@@ -78,7 +78,7 @@
             </div>
         </div>
     </section>
-    <section class='about-section'>
+    <section id='about-section'>
         <h1 class='section-title'>O MNIE</h1>
         <div class="about-wrapper">
             <div class="about-info-wrapper">
@@ -102,7 +102,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-section">
+    <section id="contact-section">
         <h1 class='section-title'>KONTAKT</h1>
         <div class="contact-form">
             <form name="contact" method="POST" netlify>
@@ -113,9 +113,23 @@
                 <button type="submit">WYŚLIJ</button>
             </form>
         </div>
-
     </section>
-
+    <footer>
+        <div class="footer-logo">
+            <img src="https://www.dropbox.com/s/oorshj2cr6kz9ou/LogoMakr_1dSGnk.png?raw=1" class="logo" alt="Karolina Brumer Copywriting">
+        </div>
+        <div class="footer-mail-divider"></div>
+        <div class="footer-mail">
+            <a href="mailto:karolina.brumer@gmail.com">karolina.brumer@gmail.com</a>
+        </div>
+        <div class="footer-social-divider"></div>
+        <div class="footer-social">
+            <a href='#'><i class="fab fa-twitter"></i></a>
+            <a href='#'><i class="fab fa-facebook-f"></i></a>
+            <a href='#'><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>Copyright Karolina Brumer &copy; 2018</p>
+    </footer>
     <script src="dist/bundle.js"></script>
 </body>
 

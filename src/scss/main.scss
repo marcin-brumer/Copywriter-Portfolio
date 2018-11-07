@@ -16,7 +16,7 @@ p {
   padding: 0;
 }
 
-.showcase {
+#showcase {
   background: url(https://raw.githubusercontent.com/marcin-brumer/Copywriter-Portfolio/master/dist/img/background2.jpg)
     no-repeat center center;
   background-size: cover;
@@ -95,7 +95,7 @@ p {
   }
 }
 
-.offer-section {
+#offer-section {
   background-image: linear-gradient(
     135deg,
     #1f1e1e 0.98%,
@@ -146,7 +146,7 @@ p {
     }
   }
 }
-.about-section {
+#about-section {
   background-image: linear-gradient(
     45deg,
     #ebebeb 0.98%,
@@ -187,7 +187,7 @@ p {
     }
   }
 }
-.contact-section {
+#contact-section {
   background: url(https://www.dropbox.com/s/pnxlzxgy2bf0r46/pexels-photo-408951.jpeg?raw=1)
     no-repeat center center;
   background-attachment: fixed;
@@ -231,6 +231,82 @@ p {
           background-color: #fff;
           color: $primary-color;
         }
+      }
+    }
+  }
+}
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 50px 0;
+  color: #fff;
+  .footer-logo {
+    margin-bottom: 25px;
+    .logo {
+      height: 60px;
+    }
+  }
+  .footer-mail-divider {
+    position: relative;
+    display: block;
+    height: 50px;
+    &::before {
+      content: "";
+      width: 2px;
+      height: 50px;
+      position: absolute;
+      background-color: #fff;
+      top: 0;
+      left: calc(50% - 1px);
+    }
+  }
+  .footer-mail {
+    margin: 20px 0;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      @include easeOut;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  .footer-social-divider {
+    position: relative;
+    display: block;
+    height: 50px;
+    &::before {
+      content: "";
+      width: 2px;
+      height: 50px;
+      position: absolute;
+      background-color: #fff;
+      top: 0;
+      left: calc(50% - 1px);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 2px;
+      background-color: white;
+      left: calc(50% - 150px);
+      bottom: 0;
+    }
+  }
+  .footer-social {
+    margin: 20px 0;
+    font-size: 1.4rem;
+    letter-spacing: 5px;
+    a {
+      color: #fff;
+      cursor: pointer;
+      @include easeOut;
+      &:hover {
+        color: $primary-color;
       }
     }
   }

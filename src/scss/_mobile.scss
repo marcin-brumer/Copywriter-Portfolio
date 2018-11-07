@@ -1,12 +1,12 @@
 // XL
 @media screen and (max-width: 1500px) {
-  .offer-section {
+  #offer-section {
     .offer-wrapper {
       width: 80%;
     }
   }
 
-  .about-section {
+  #about-section {
     .about-wrapper {
       grid-template-columns: repeat(2, 1fr);
       width: 80%;
@@ -16,19 +16,19 @@
 
 // Lg
 @media screen and (max-width: 1200px) {
-  .offer-section {
+  #offer-section {
     .offer-wrapper {
       grid-gap: 40px;
     }
   }
 
-  .about-section {
+  #about-section {
     .about-wrapper {
       width: 90%;
     }
   }
 
-  .contact-section {
+  #contact-section {
     .contact-form {
       width: 80%;
     }
@@ -37,13 +37,13 @@
 
 // Medium
 @media screen and (max-width: 992px) {
-  .offer-section {
+  #offer-section {
     .offer-wrapper {
       grid-template-columns: 1fr;
     }
   }
 
-  .about-section {
+  #about-section {
     .about-wrapper {
       text-align: center;
       grid-template-columns: 1fr;
@@ -59,7 +59,7 @@
     }
   }
 
-  .contact-section {
+  #contact-section {
     .contact-form {
       width: 90%;
     }
@@ -67,7 +67,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .about-section {
+  #about-section {
     .about-photo {
       img {
         max-width: 80%;
@@ -75,7 +75,7 @@
     }
   }
 
-  .contact-section {
+  #contact-section {
     .contact-form {
       form {
         grid-template-columns: 1fr;
@@ -100,10 +100,18 @@
     }
   }
 
-  .about-section {
+  #about-section {
     .about-photo {
       img {
         max-width: 100%;
+      }
+    }
+  }
+
+  footer {
+    .footer-mail {
+      a {
+        font-size: 1.2rem;
       }
     }
   }
@@ -111,7 +119,7 @@
 
 // Landscape
 @media screen and (max-height: 550px) {
-  .showcase {
+  #showcase {
     .content {
       top: 0;
     }
