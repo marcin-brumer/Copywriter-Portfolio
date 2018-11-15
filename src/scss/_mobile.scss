@@ -122,6 +122,9 @@
   #showcase {
     .content {
       top: 0;
+      .logo {
+        display: none;
+      }
     }
   }
 }
