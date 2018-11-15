@@ -8,6 +8,7 @@
 
   #about-section {
     .about-wrapper {
+      -ms-grid-columns: 1fr 1fr;
       grid-template-columns: repeat(2, 1fr);
       width: 80%;
     }
@@ -39,6 +40,7 @@
 @media screen and (max-width: 992px) {
   #offer-section {
     .offer-wrapper {
+      -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
     }
   }
@@ -46,6 +48,7 @@
   #about-section {
     .about-wrapper {
       text-align: center;
+      -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
       width: 80%;
     }
@@ -78,6 +81,7 @@
   #contact-section {
     .contact-form {
       form {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         textarea,
         button {
