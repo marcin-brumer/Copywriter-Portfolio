@@ -1,6 +1,6 @@
-/* === dont forget to import scss to main.js file === */
-/* ===> import './main.scss'; <=== */
-
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 var path = require("path");
 
 module.exports = {
@@ -23,19 +23,25 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
-        use: [
-          {
-            loader: "style-loader" // creates style nodes from JS strings
-          },
-          {
-            loader: "css-loader" // translates CSS into CommonJS
-          },
-          {
-            loader: "sass-loader" // compiles Sass to CSS
-          }
-        ]
+        test: /\.s?css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
       }
     ]
-  }
+  },
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: true // set to true if you want JS source maps
+      }),
+      new OptimizeCSSAssetsPlugin({})
+    ]
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+    })
+  ]
 };
